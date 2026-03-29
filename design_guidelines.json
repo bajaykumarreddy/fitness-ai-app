@@ -1,0 +1,91 @@
+{
+  "theme": "dark",
+  "archetype": "2 (Performance Pro)",
+  "mood": "Command-center focus, high energy, tactical athleticism",
+  "typography": {
+    "heading_font": "Barlow Condensed",
+    "body_font": "Inter",
+    "hierarchy": {
+      "h1": "text-4xl sm:text-5xl tracking-tighter font-black",
+      "h2": "text-2xl sm:text-3xl tracking-tight font-bold",
+      "h3": "text-xl sm:text-2xl font-bold",
+      "h4": "text-lg sm:text-xl font-semibold",
+      "body": "text-base leading-relaxed text-gray-300",
+      "small": "text-sm text-gray-400",
+      "overline": "text-xs tracking-[0.2em] uppercase font-bold text-[#FF3B30]"
+    }
+  },
+  "colors": {
+    "background": "#0A0A0A",
+    "surface": "#141414",
+    "surface_elevated": "#1C1C1E",
+    "primary": "#FF3B30",
+    "primary_hover": "#FF5248",
+    "text_primary": "#FFFFFF",
+    "text_secondary": "#9CA3AF",
+    "text_inverse": "#000000",
+    "border": "rgba(255, 255, 255, 0.1)",
+    "success": "#34C759",
+    "warning": "#FF9F0A"
+  },
+  "surfaces_and_borders": {
+    "dashboard_cards": "bg-[#141414] border border-white/10 rounded-2xl shadow-sm",
+    "glass_header": "bg-[#0A0A0A]/80 backdrop-blur-xl border-b border-white/10",
+    "inputs": "bg-[#1C1C1E] border border-white/10 rounded-xl text-white focus:border-[#FF3B30] focus:ring-1 focus:ring-[#FF3B30]",
+    "buttons_primary": "bg-[#FF3B30] text-white font-bold rounded-xl active:scale-95 transition-transform",
+    "buttons_secondary": "bg-[#1C1C1E] text-white border border-white/20 font-bold rounded-xl active:scale-95 transition-transform"
+  },
+  "spacing_and_layout": {
+    "screen_padding": "p-6 sm:p-8",
+    "grid_gap": "gap-4 sm:gap-6",
+    "section_spacing": "py-8 sm:py-12",
+    "card_padding": "p-5 sm:p-6"
+  },
+  "motion": {
+    "hover_state": "transition-all duration-200 ease-in-out",
+    "active_state": "active:scale-95 active:opacity-80",
+    "entrance": "animate-in fade-in slide-in-from-bottom-4 duration-500"
+  },
+  "media": {
+    "image_urls": {
+      "trainer_avatar": {
+        "url": "https://images.pexels.com/photos/3912944/pexels-photo-3912944.jpeg",
+        "description": "Portrait of a male gym trainer under vibrant blue neon lights",
+        "usage": "Use as the avatar for the Trainer AI Persona in chat and dashboard."
+      },
+      "nutritionist_avatar": {
+        "url": "https://images.pexels.com/photos/20002955/pexels-photo-20002955.jpeg",
+        "description": "Smiling doctor holding a green apple",
+        "usage": "Use as the avatar for the Nutritionist AI Persona."
+      },
+      "buddy_avatar": {
+        "url": "https://images.pexels.com/photos/4908557/pexels-photo-4908557.jpeg",
+        "description": "Smiling bald African American man outdoors",
+        "usage": "Use as the avatar for the Buddy AI Persona."
+      },
+      "dummy_meal_screenshot": {
+        "url": "https://images.pexels.com/photos/1309595/pexels-photo-1309595.jpeg",
+        "description": "Chicken dinner with broccoli and carrots",
+        "usage": "Use as a placeholder for the user's uploaded mess menu screenshot."
+      },
+      "hero_background": {
+        "url": "https://images.pexels.com/photos/29392546/pexels-photo-29392546.jpeg",
+        "description": "Dark atmospheric gym with neon lighting",
+        "usage": "Use as a background layer (with bg-black/60 overlay) for the top dashboard header."
+      }
+    }
+  },
+  "icons": {
+    "library": "lucide-react",
+    "style": "stroke-width-2, solid and bold outlines for better visibility against dark backgrounds."
+  },
+  "instructions_to_main_agent": [
+    "This is a React Native Expo application, but adapt Tailwind classes using standard React Native styles or NativeWind depending on the boilerplate.",
+    "Do NOT use pure #000000 for large background areas; use #0A0A0A (Deep Obsidian) to avoid heavy eye strain.",
+    "All AI chat screens must feature the respective persona avatars assigned in the media section.",
+    "Use Electric Blaze (#FF3B30) for Call-to-Action buttons, progress bars, and active tabs.",
+    "Add test IDs (`data-testid` equivalent in RN `testID`) to all interactive elements, e.g., `testID='log-workout-btn'`.",
+    "Ensure input fields (e.g., reps, weights, measurements) use dark elevated surfaces (#1C1C1E) with a subtle white border.",
+    "The dashboard should have a 'Control Room' dense layout for metrics (calories, workouts, body stats) using 2-column or 3-column tight grids."
+  ]
+}
